@@ -45,3 +45,32 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'figaro'
+gem 'foundation-rails'
+gem 'haml-rails'
+gem 'high_voltage'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'pg'
+gem 'simple_form'
+gem 'unicorn'
+gem 'unicorn-rails'
+
+group :development do
+  gem 'better_errors'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_layout'
+end
+
+group :development, :test do
+  gem 'rubocop'
+end
+
+group :production do
+  gem 'rails_12factor'
+end
+
